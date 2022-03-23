@@ -1,0 +1,72 @@
+function start() {
+    //create the grid database here
+    Grids
+
+// Create a grid named "newGrid"
+var newGrid = new Grid(rows, cols);
+
+// Get a value in a grid
+var elem = newGrid.get(row, col);
+
+// Set a value in a grid
+newGrid.set(row, col, val);
+
+// Getting dimensions
+var rows = newGrid.numRows();
+var cols = newGrid.numCols();
+
+// Is a row, col pair inbounds
+newGrid.inBounds(row, col);
+
+// Set all values in grid to initial value
+newGrid.init(0); // sets all grid values to 0
+
+// Initialze a grid from an array
+newGrid.initFromArray([
+	[6, 3, 2],	// 0th row
+	[2, 5, 1],	// 1st row
+	[4, 3, 9],	// 2nd row
+	[1, 5, 1]	// 3rd row
+]);
+    //input the names, ages, and hobbies into the grid database
+    
+    //call the getData function three times
+
+Sets
+
+// Make a new set named "newSet"
+var newSet = new Set();
+
+// Add to a set
+newSet.add(5);
+
+// Does a set contain a value
+newSet.contains(5); // returns a boolean
+
+// Number of elements in the set
+var count = newSet.size; // returns an integer
+
+// Make a new set named "setA"
+var setA = new Set();
+// Add 2 numbers to the set
+    setA.add(1);
+    setA.add(2);
+// Make a new set named "setB"
+var setB = new Set();
+// Add 2 numbers to the set
+    setB.add(2);
+    setB.add(3);
+
+// Call the intersect function on "setA" and pass in "setB", store the resulting
+// set in a new variable named "mutualSet"
+var mutualSet = setA.intersect(setB);
+
+
+}
+
+function getData(data, row){
+    //complete this function
+    
+    
+    
+}
